@@ -1,0 +1,26 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  background-color: aqua;
+}
+.container__image {
+  flex: 1;
+  border: 1px solid red;
+  background-image: url("./logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.container__text {
+  flex: 1;
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=rwd1.css.map */
