@@ -24,12 +24,18 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        &__1{}
-
+        &__1{
+            font-size: 2.5rem;
+        }
+       [class^="container__text__"]:not(.container__text__1)
+       {
+        font-size: 1.5rem;
+       }
         &__2{}
 
         &__3{}
 
         &__4{}
+        
     }
 }
