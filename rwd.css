@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+}
+.container__header {
+  height: 10vh;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__header__logo {
+  margin-left: 10px;
+}
+.container__header__logo__brand {
+  margin-right: 10px;
+}
+.container__header__menu {
+  margin-right: 10px;
+  display: flex;
+  gap: 2rem;
+}
+.container__body {
+  height: 80vh;
+  background-color: burlywood;
+}
+.container__footer {
+  height: 10vh;
+  background-color: chartreuse;
+}
+
+@media (max-width: 576px) {
+  .container__header {
+    justify-content: center;
+    align-items: center;
+    color: olivedrab;
+    /* flex item1*/
+    /* flexitem2 */
+  }
+  .container__header__menu {
+    display: none;
+  }
+}/*# sourceMappingURL=rwd.css.map */

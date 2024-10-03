@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grid UseCases </title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .parent{
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 10% 80% 10%;
+            grid-template-columns: 15% 70% 15%;
+        }
+        .header{
+            background-color: blueviolet;
+            grid-column: 1/4;
+            grid-row: 1/2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+        }
+        .leftmenu{
+            background-color: chartreuse;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .rightmenu{
+            background-color: darkgray;
+            grid-column: 3/4;
+            grid-row: 2/3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .body{
+            background-color: burlywood;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .footer{
+            background-color: deeppink;
+            grid-column: 1/4;
+            grid-row: 3/4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- parent -->
+    <div class="parent">
+        <!-- grid item1 -->
+        <div class="header">
+            <h1> K L University </h1></div>
+        <!-- grid item 2 -->
+        <div class="leftmenu">Left Menu</div>
+        <!-- grid item3 -->
+        <div class="body">Body</div>
+        <!-- grid item4 -->
+        <div class="rightmenu">Right Menu</div>
+        <!-- grid item 5 -->
+        <div class="footer">
+            <h1>Footer</h1></div>
+
+
+    </div>
+    
+</body>
+</html>
