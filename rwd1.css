@@ -25,8 +25,19 @@
   align-items: center;
 }
 .container__text__1 {
-  font-size: 2.5rem;
+  font-size: 4vw;
 }
 .container__text [class^=container__text__]:not(.container__text__1) {
-  font-size: 1.5rem;
+  font-size: 2vw;
+}
+@media (max-width: 576px) {
+  .container .container {
+    flex-direction: column;
+  }
+  .container .container__text [class^=container__text__]:not(.container__text__1) {
+    display: none;
+  }
+  .container .container__text__1 {
+    font-size: 5vw;
+  }
 }/*# sourceMappingURL=rwd1.css.map */
